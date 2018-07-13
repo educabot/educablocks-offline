@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content=" Plataforma de programación en Bloques">
+    <meta name="keywords" content="arduino educablocks educabot bloques scratch bitbloq ardublock programacion robot robotica">
+
+    <title>Educablocks</title>
+
+    <!-- Styles -->
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/thesaas.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <!--<script type="text/javascript" src="../../node_modules/electron-open-link-in-browser/build/electron-open-link-in-browser.js"></script>-->
+
+    <link rel="icon" href="assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Topbar -->
+    <nav class="topbar topbar-inverse topbar-expand-sm">
+      <div class="container">
+        
+        <div class="topbar-left">
+          <a class="topbar-brand" href="index.html">
+            <img class="logo-default" src="assets/img/logo.png" alt="logo">
+            <img class="logo-inverse" src="assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+
+
+      </div>
+    </nav>
+    <!-- END Topbar -->
+
+
+
+
+    <!-- Header -->
+    <header class="header header-inverse h-fullscreen" style="background-image: url(assets/img/login2.jpg)">
+
+      <div class="container text-center">
+
+        <div class="row h-full">
+          <div class="col-12 col-lg-8 offset-lg-2 align-self-center">
+
+            <p><img src="assets/img/logoedu.png" alt="..."></p>
+
+            <p class="fs-22">Programar en <b>Arduino</b> nunca fue tan fácil y divertido. Si no tenés internet, te recomendamos utilizar el <b>modo offline</b>.</p>
+
+            <hr class="w-80">
+
+            <p>
+              <a class="btn btn-xl btn-round btn-outline btn-white w-250" id="redirectView" href="../../views/center/html/public/bloques.ejs">Versión offline</a>
+              <!--<a class="btn btn-xl btn-round btn-outline btn-white w-250" href="./online.ejs">Versión online</a>-->
+              <a class="btn btn-xl btn-round btn-danger w-250" href="https://formal-vertex-180414.appspot.com/">Versión online</a>
+              <!--<a class="btn btn-xl btn-round btn-danger w-250" id="online" href="https://formal-vertex-180414.appspot.com/login" onclick="electronOpenLinkInBrowser();">Versión online</a>-->
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/thesaas.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+  </body>
+</html>
+
+<script>
+    var shell = require('electron').shell;
+    //open links externally by default
+    $(document).on('click', 'a[href^="http"]', function(event) {
+        event.preventDefault();
+        shell.openExternal(this.href);
+    });
+
+    const Store = require('electron').remote.require('electron-store');
+    const store = new Store();
+    const perfil = store.get('perfil')
+    $("#redirectView").prop("href", "../../views/center/html/public/"+perfil);
+
+
+
+</script>

@@ -1,0 +1,25 @@
+#alumnosTable .footable-filtering {
+  display: none;
+}
+
+#ejerciciosTable .footable-filtering {
+  display: none;
+}
+
+#fechasTable .footable-filtering {
+  display: none;
+}
+
+#correccionesTable .footable-filtering {
+  display: none;
+}
+
+#alumnosAsistenciaTable .footable-filtering {
+  display: none;
+}
+
+.form-group.required .control-label:after {
+  margin-left: 4px;
+  color: red;
+  content: "*";
+}

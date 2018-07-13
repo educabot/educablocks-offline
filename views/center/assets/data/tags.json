@@ -1,0 +1,133 @@
+[{
+    "value": 1,
+    "text": "Servo 180",
+    "categoria": "1"
+}, {
+    "value": 2,
+    "text": "Motor DC",
+    "categoria": "1"
+}, {
+    "value": 3,
+    "text": "Matriz",
+    "categoria": "2"
+}, {
+    "value": 4,
+    "text": "LCD",
+    "categoria": "2"
+}, {
+    "value": 5,
+    "text": "Zumbador",
+    "categoria": "3"
+}, {
+    "value": 6,
+    "text": "Led",
+    "categoria": "3"
+}, {
+    "value": 7,
+    "text": "Led RGB",
+    "categoria": "3"
+}, {
+    "value": 8,
+    "text": "PIR",
+    "categoria": "4"
+}, {
+    "value": 9,
+    "text": "Ultrasonido",
+    "categoria": "4"
+}, {
+    "value": 10,
+    "text": "Botón",
+    "categoria": "4"
+}, {
+    "value": 11,
+    "text": "Potenciometro",
+    "categoria": "4"
+}, {
+    "value": 12,
+    "text": "DHT11",
+    "categoria": "4"
+}, {
+    "value": 13,
+    "text": "Luz",
+    "categoria": "4"
+}, {
+    "value": 14,
+    "text": "Suelo",
+    "categoria": "4"
+}, {
+    "value": 15,
+    "text": "Sonido",
+    "categoria": "4"
+}, {
+    "value": 16,
+    "text": "Optico",
+    "categoria": "4"
+}, {
+    "value": 17,
+    "text": "Seguidor de líneas",
+    "categoria": "4"
+}, {
+    "value": 18,
+    "text": "Led (2)",
+    "categoria": "3"
+}, {
+    "value": 19,
+    "text": "Led (3)",
+    "categoria": "3"
+}, {
+    "value": 20,
+    "text": "Led (4)",
+    "categoria": "3"
+}, {
+    "value": 21,
+    "text": "Potenciometro (2)",
+    "categoria": "4"
+}, {
+    "value": 22,
+    "text": "Potenciometro (3)",
+    "categoria": "4"
+}, {
+    "value": 23,
+    "text": "Potenciometro (4)",
+    "categoria": "4"
+}, {
+    "value": 24,
+    "text": "Servo 180 (2)",
+    "categoria": "1"
+}, {
+    "value": 25,
+    "text": "Servo 180 (3)",
+    "categoria": "1"
+},{
+    "value": 26,
+    "text": "Servo 180 (4)",
+    "categoria": "1"
+}, {
+    "value": 27,
+    "text": "Servo 360",
+    "categoria": "1"
+}, {
+    "value": 28,
+    "text": "Servo 360 (2)",
+    "categoria": "1"
+}, {
+    "value": 29,
+    "text": "Botón (2)",
+    "categoria": "4"
+}, {
+    "value": 31,
+    "text": "Botón (3)",
+    "categoria": "4"
+}, {
+    "value": 32,
+    "text": "Botón (4)",
+    "categoria": "4"
+}, {
+    "value": 33,
+    "text": "Optico (2)",
+    "categoria": "4"
+}, {
+    "value": 34,
+    "text": "Motor DC (2)",
+    "categoria": "1"
+}]

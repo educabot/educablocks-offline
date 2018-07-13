@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../img/favicon.png">
+  <title>Educablocks</title>
+  <link rel="stylesheet" href="../src/dashboard/styles/arduino-light.css">
+  <link rel="stylesheet" href="../src/material/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../src/material/css/material-dashboard.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../modules/bootstrap-toggle-master/css/bootstrap-toggle.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-info navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+ <a class="navbar-brand" href="../index.html">Educablocks</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <li class="dropdown">
+                <a href="../tutoriales.html">
+                <i class="material-icons">class</i>
+                <p class="hidden-lg hidden-md">Proyectos</p>
+                </a>
+              </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="material-icons">crop_free</i>
+                <p class="hidden-lg hidden-md">Configuración</p>
+                </a>
+                <ul class="dropdown-menu">
+                <li><a id="view-fullscreen">Pantalla Completa</a></li>
+                <li><a id="cancel-fullscreen">Salir de pantalla completa</a></li>
+                </ul>
+              </li>
+      </nav>
+
+   
+    <div class="content">
+</br>
+</br>
+<div class="row">
+<div class="card card-nav-tabs">
+  <div class="card-header" data-background-color="blue">
+    <div class="nav-tabs-navigation">
+      <div class="nav-tabs-wrapper">
+        <span class="nav-tabs-title">Requisitos:</span>
+        <ul class="nav nav-tabs" data-tabs="tabs">
+          <li class="active">
+            <a href="#componentes" data-toggle="tab">
+              <i class="material-icons">memory</i>
+              Componentes electrónicos:
+            <div class="ripple-container"></div></a>
+          </li>
+          <li class="">
+            <a href="#software" data-toggle="tab">
+              <i class="material-icons">code</i>
+              Software
+            <div class="ripple-container"></div></a>
+          </li>
+          <li class="">
+            <a href="#resumen" data-toggle="tab">
+              <i class="material-icons">description</i>
+              Resumen
+            <div class="ripple-container"></div></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <div class="tab-content">
+      <div class="tab-pane active" id="componentes">
+<ul>
+<li>Arduino UNO/Genuino 101</li>
+<li>Sensor ultrasonido</li>
+<li>Shield</li>
+<li>Buzzer</li>
+<li>Mini protoboard</li>
+</ul>
+      </div>
+      <div class="tab-pane" id="software">
+<ul>
+<li>Arduino IDE</li>
+<li>Educablocks</li>
+</ul>
+      </div>
+      <div class="tab-pane" id="resumen">
+<p>En el siguiente proyecto programaremos nuestra caja para que suene al ser abierta.</p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+</br>
+</br>
+<div class="row">
+<div class="card card-nav-tabs">
+  <div class="card-header" data-background-color="red">
+    <div class="nav-tabs-navigation">
+      <div class="nav-tabs-wrapper">
+        <span class="nav-tabs-title">Guía:</span>
+        <ul class="nav nav-tabs" data-tabs="tabs">
+          <li class="active">
+            <a href="#1" data-toggle="tab">
+              Paso 1
+            <div class="ripple-container"></div></a>
+          </li>
+          <li class="">
+            <a href="#2" data-toggle="tab">
+              Paso 2
+            <div class="ripple-container"></div></a>
+          </li>
+          <li class="">
+            <a href="#3" data-toggle="tab">
+              Paso 3
+            <div class="ripple-container"></div></a>
+          </li>
+            <li class="">
+            <a href="#4" data-toggle="tab">
+              Paso 4
+            <div class="ripple-container"></div></a>
+          </li>
+            <li class="">
+            <a href="#5" data-toggle="tab">
+              Paso 5
+            <div class="ripple-container"></div></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <div class="tab-content">
+      <div class="tab-pane active" id="1">
+<p>El primer paso será realizar las conexiones de los diferentes componentes electrónicos.</p>
+<img class="aligncenter wp-image-661 size-full" src="../img/actividades/seguridad/montaje.png" alt="width="1920" height="1080" sizes="(max-width: 1920px) 100vw, 1920px" />
+      </div>
+      <div class="tab-pane" id="2">
+<p>Una vez que realizamos las conexiones, pasaremos a realizar el código para subirlo a nuestra placa.</p>
+<p><img class="aligncenter wp-image-661 size-full" src="../img/actividades/seguridad/bloques.png" alt="" width="1920" height="1080" sizes="(max-width: 1920px) 100vw, 1920px" /></p>
+      </div>
+      <div class="tab-pane" id="3">
+<p>Si quieren programarlo directamente en código, les dejamos a continuación el equivalente a los bloques.</p>
+
+<pre><code class="arduino-light">
+//sensor de ultrasonido
+long tiempo(int trigger_pin, int echo_pin);
+long distancia(int trigger_pin, int echo_pin);
+
+void setup()
+{
+  pinMode( 3 , INPUT );
+  pinMode( 2 , OUTPUT );
+}
+
+void loop()
+{
+    if (distancia(2,3) &gt;= 4) {
+      tone(5,261,1000);
+      delay(1000);
+      tone(5,293,1000);
+      delay(1000);
+     }
+
+}
+
+//sensor de ultrasonido
+long tiempo(int trigger_pin, int echo_pin)
+{
+  digitalWrite(trigger_pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigger_pin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigger_pin, LOW);
+  long microseconds = pulseIn(echo_pin ,HIGH);
+  return microseconds;
+}
+long distancia(int trigger_pin, int echo_pin)
+{
+  long microseconds = tiempo(trigger_pin, echo_pin);
+  long distancia;
+  distancia = microseconds/29/2;
+  if (distancia == 0){
+    distancia = 999;
+  }
+  return distancia;
+}
+</code></pre>
+      </div>
+<div class="tab-pane" id="4">
+<p>Una vez que sabemos que nuestro código funciona correctamente, armamos la estructura de nuestra caja de seguridad.</p>
+<p><img class="aligncenter wp-image-657 size-full" src="../img/actividades/seguridad/3d.png" alt="" width="768" height="594" sizes="(max-width: 768px) 100vw, 768px" /></p>
+      </div>
+
+            <div class="tab-pane" id="5">
+<p>Por último, los invitamos a que ustedes realicen nuevos tonos para la alarma o agreguen nuevos sensores.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+<!-- js -->
+
+  <script src="../src/dashboard/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="../modules/jquery-3.1.1.js"></script>
+  <script src="../modules/bootstrap.js"></script>
+
+  <script src="../modules/ajaxq.js"></script>
+
+
+
+  <!--
+  <script src='https://code.highcharts.com/highcharts.js'></script>
+  <script src='https://code.highcharts.com/modules/exporting.js'></script>
+  -->
+
+  <script src="../src/dashboard/js/arest.js"></script>
+  <!--<script src="src/dashboard/js/script.js"></script>-->
+  <script src="../src/dashboard/js/index.js"></script>
+
+  <script src="../src/material/js/material.min.js" type="text/javascript"></script>
+
+
+  <!-- Material Dashboard javascript methods -->
+  <script src="../src/material/js/material-dashboard.js"></script>
+
+  <!--   Sharrre Library    -->
+    <script src="../src/material/js/jquery.sharrre.js"></script>
+
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../src/material/js/demo.js"></script>
+
+  <script type="../text/javascript">
+      $(document).ready(function(){
+
+      // Javascript method's body can be found in assets/js/demos.js
+          demo.initDashboardPageCharts();
+
+      });
+  </script>
+
+  <script src="../src/base.js"></script>
+
+  <!--  Notifications Plugin    -->
+  <script src="../src/material/js/bootstrap-notify.js"></script>
+</body>
+
+
+
+</html>
+
+

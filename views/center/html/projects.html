@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+  <title>Educablocks</title>
+  <link rel="apple-touch-icon" href="../../../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../../../global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../../../assets/css/site.min.css">
+    <link rel="stylesheet" href="../../../assets/skins/blue.css">
+  <link rel="stylesheet" href="../../../assets/skins/blue.min.css">
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../../../global/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../../../global/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../../../global/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../../../global/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../../../global/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../../../global/vendor/flag-icon-css/flag-icon.css">
+  <link rel="stylesheet" href="../../../../global/vendor/waves/waves.css">
+  <link rel="stylesheet" href="../../../../global/vendor/jquery-selective/jquery-selective.css">
+  <link rel="stylesheet" href="../../../assets/examples/css/apps/projects.css">
+  <link rel="stylesheet" href="../../../../global/vendor/waves/waves.css">
+  <link rel="stylesheet" href="../../../../global/vendor/toastr/toastr.css">
+  <link rel="stylesheet" href="../../../../global/vendor/bootstrap-treeview/bootstrap-treeview.css">
+  <link rel="stylesheet" href="../../../../global/vendor/jstree/jstree.min.css">
+  <!-- Rating -->
+  <link rel="stylesheet" href="../../../../global/vendor/raty/jquery.raty.css">
+  <link rel="stylesheet" href="../../../assets/examples/css/advanced/rating.css">
+
+
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../../../global/fonts/material-design/material-design.min.css">
+  <link rel="stylesheet" href="../../../../global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <!--[if lt IE 9]>
+    <script src="../../../../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+  <!--[if lt IE 10]>
+    <script src="../../../../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../../../../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+  <!-- Scripts -->
+  <script src="../../../../global/vendor/breakpoints/breakpoints.js"></script>
+  <script>
+  Breakpoints();
+  </script>
+</head>
+<body class="animsition app-projects">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+   <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-inverse"
+  role="navigation">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon md-more" aria-hidden="true"></i>
+      </button>
+      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+        <img class="navbar-brand-logo" src="../assets/images/logo.png" title="Educablocks">
+        <span class="navbar-brand-text hidden-xs-down"> Educablocks</span>
+      </div>
+     
+    </div>
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="nav-item hidden-float" id="toggleMenubar">
+            <a class="nav-link" data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+            </a>
+          </li>
+
+
+            </div>
+          </li>
+        </ul>
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+          <li class="nav-item dropdown">
+
+            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+            aria-expanded="false" role="button">
+              <span class="flag-icon flag-icon-es"></span>
+            </a>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                <span class="flag-icon flag-icon-gb"></span> Inglés</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                <span class="flag-icon flag-icon-br"></span> Portugués</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                <span class="flag-icon flag-icon-fr"></span> Francés</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                <span class="flag-icon flag-icon-de"></span> Aleman</a>
+            </div>
+          </li>
+                    <li class="nav-item dropdown">
+            <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+            data-animation="scale-up" role="button">
+              <span class="avatar avatar-online">
+                <img src="../../../../global/portraits/20.jpg" alt="...">
+                <i></i>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+            <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+              <span class="sr-only">Toggle fullscreen</span>
+            </a>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+        <div class="navbar-brand navbar-brand-center">
+          <a href="../../index.html">
+            <img class="navbar-brand-logo" src="../../../assets/images/logo.png" title="Educablocks">
+          </a>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+      <!-- Site Navbar Seach -->
+      <div class="collapse navbar-search-overlap" id="site-navbar-search">
+        <form role="search">
+          <div class="form-group">
+            <div class="input-search">
+              <i class="input-search-icon md-search" aria-hidden="true"></i>
+              <input type="text" class="form-control" name="site-search" placeholder="Search...">
+              <button type="button" class="input-search-close icon md-close" data-target="#site-navbar-search"
+              data-toggle="collapse" aria-label="Close"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Site Navbar Seach -->
+    </div>
+  </nav>
+  <div class="site-menubar">
+    <div class="site-menubar-header">
+      <div class="cover overlay">
+        <img class="cover-image" src="../../../assets//examples/images/header2.png"
+        alt="...">
+        <div class="overlay-panel vertical-align overlay-background">
+          <div class="vertical-align-middle">
+            <a class="avatar avatar-lg" href="javascript:void(0)">
+              <img src="../../../../global/portraits/20.jpg" alt="">
+            </a>
+            <div class="site-menubar-info">
+              <h5 class="site-menubar-user">Juani</h5>
+              <p class="site-menubar-email">juani2005@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-menubar-body">
+      <div>
+        <div>
+          <ul class="site-menu" data-plugin="menu">
+            <li class="site-menu-item">
+              <a class="animsition-link" href="../../index.html">
+                <i class="site-menu-icon md-apps" aria-hidden="true"></i>
+                <span class="site-menu-title">Inicio</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a class="animsition-link" href="../../bloques.html">
+                <i class="site-menu-icon md-code" aria-hidden="true"></i>
+                <span class="site-menu-title">Bloques</span>
+              </a>
+            </li>
+            <li class="site-menu-item active">
+              <a class="animsition-link" href="">
+                <i class="site-menu-icon md-book" aria-hidden="true"></i>
+                <span class="site-menu-title">Proyectos</span>
+              </a>
+            </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page -->
+  <div class="page">
+    <div class="page-header">
+      <h1 class="page-title">Biblioteca de recursos</h1>
+    </div>
+  <div class="page-content">  
+  <div class="row" >
+                <div class="col-md-4">
+                <div class="card card-shadow">
+    <div class="col-md-8">              
+   <h4 class="example-title">Fitrar busqueda</h4>
+                <button type="button" class="btn btn-primary" id="exampleExpandAll">Expandir</button>
+                <button type="button" class="btn btn-primary" id="exampleCollapseAll">Colapsar</button>
+ </div>               
+                <div class="example">
+                  <div id="exampleExpandibleTree"></div>
+                </div>
+              </div>
+</div>
+  
+                <div class="col-md-8">
+                <div class="card card-shadow">
+     <ul class="nav nav-tabs nav-tabs-line" role="tablist" id="exampleFilter">
+        <li class="nav-item" role="presentation">
+          <a class="active nav-link" href="#" aria-controls="exampleList" aria-expanded="true"
+          role="tab" data-filter="*">Todos</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#" aria-expanded="false" role="tab" data-filter="principiante">Principiante</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#" aria-expanded="false" role="tab" data-filter="intermedio">Intermedio</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#" aria-expanded="false" role="tab" data-filter="avanzado">Avanzado</a>
+        </li>
+      </ul>
+      <div class="page-content">                    
+                    <div> <ul class="blocks blocks-100 blocks-xxl-4 blocks-lg-3 blocks-md-2" data-plugin="filterable"
+      data-filters="#exampleFilter">
+          <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/vigilante/frontal.png">
+              </figure>
+              <div class="text-truncate"> Vigilante</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+           <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/seguridad/frontal.png">
+              </figure>
+              <div class="text-truncate"> Caja de seguridad</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/robot/frontal.png">
+              </figure>
+              <div class="text-truncate"> Avoider</div>
+              <div class="text-truncate"><span class="text-danger">PRINCIPIANTE</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/caja/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/teatro/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>
+                    <li data-type="intermedio">
+            <div class="panel">
+              <figure class="overlay overlay-hover animation-hover">
+                <img class="caption-figure overlay-figure" src="actividades/aplausos/frontal.png">
+              </figure>
+              <div class="text-truncate"> Contador de aplausos</div>
+              <div class="text-truncate"><span class="text-danger">INTERMEDIO</div>
+              <div class="example">
+                  <div class="rating" data-plugin="rating"></div>
+              </div>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem"></div>
+              <div align="center" class="example example-buttons">
+                  <div class="btn-group" aria-label="Basic example" role="group">
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-info-outline" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-playlist-plus" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-icon  btn-primary"><i class="icon md-star" aria-hidden="true"></i></button>                    
+                  </div>
+          </div>
+          </li>          
+        </ul>
+      </div>
+      <nav>
+        <ul class="pagination pagination-no-border">
+          <li class="disabled page-item">
+            <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="active page-item"><a class="page-link" href="javascript:void(0)">1 <span class="sr-only">(current)</span></a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </div>
+  </div>
+                </div>
+
+ 
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-legal">© 2017 <a href="http://educabot.org">Educabot</a></div>
+    <div class="site-footer-right">
+      Desarrollado <i class="red-600 icon md-favorite"></i> por <a href="http://educabot.org">Educabot</a>
+    </div>
+
+  </footer>
+    <script src="../../../../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+  <script src="../../../../global/vendor/jquery/jquery.js"></script>
+  <script src="../../../../global/vendor/tether/tether.js"></script>
+  <script src="../../../../global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../../../global/vendor/animsition/animsition.js"></script>
+  <script src="../../../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../../../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+  <script src="../../../../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+  <script src="../../../../global/vendor/waves/waves.js"></script>
+  <!-- Plugins -->
+  <script src="../../../../global/vendor/switchery/switchery.min.js"></script>
+  <script src="../../../../global/vendor/intro-js/intro.js"></script>
+  <script src="../../../../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../../../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../../../global/vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="../../../../global/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="../../../../global/vendor/jquery-selective/jquery-selective.min.js"></script>
+  <script src="../../../../global/vendor/bootbox/bootbox.js"></script>
+  <script src="../../../../global/vendor/raty/jquery.raty.js"></script> 
+  <!-- Scripts -->
+  <script src="../../../../global/js/State.js"></script>
+  <script src="../../../../global/js/Component.js"></script>
+  <script src="../../../../global/js/Plugin.js"></script>
+  <script src="../../../../global/js/Base.js"></script>
+  <script src="../../../../global/js/Config.js"></script>
+  <script src="../../../assets/js/Section/Menubar.js"></script>
+  <script src="../../../assets/js/Section/Sidebar.js"></script>
+  <script src="../../../assets/js/Section/PageAside.js"></script>
+  <script src="../../../assets/js/Plugin/menu.js"></script>
+  <script src="../../../../global/vendor/toastr/toastr.js"></script>
+  <script src="../../../../global/vendor/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+  <script src="../../../../global/vendor/jstree/jstree.min.js"></script>
+
+
+  <!-- Config -->
+  <script src="../../../../global/js/config/colors.js"></script>
+  <script src="../../../assets/js/config/tour.js"></script>
+  <script>
+  Config.set('assets', '../../assets');
+  </script>
+  <!-- Page -->
+  <script src="../../../assets/js/Site.js"></script>
+  <script src="../../../../global/js/Plugin/asscrollable.js"></script>
+  <script src="../../../../global/js/Plugin/slidepanel.js"></script>
+  <script src="../../../../global/js/Plugin/switchery.js"></script>
+  <script src="../../../../global/js/Plugin/filterable.js"></script>
+  <script src="../../../assets/examples/js/pages/gallery.js"></script>
+  <script src="../../../../global/js/Plugin/raty.js"></script>
+  <script src="../../../assets/js/Site.js"></script>
+  <script src="../../../../global/js/Plugin/asscrollable.js"></script>
+  <script src="../../../../global/js/Plugin/slidepanel.js"></script>
+  <script src="../../../../global/js/Plugin/switchery.js"></script>
+  <script src="../../../../global/js/Plugin/toastr.js"></script>
+  <script src="../../../../global/js/Plugin/bootstrap-treeview.js"></script>
+  <script src="../../../../global/js/Plugin/jstree.js"></script>
+  <script src="../../../assets/examples/js/advanced/treeview.js"></script>
+</body>
+</html>

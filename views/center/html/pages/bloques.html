@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="Plataforma de programación para niños">
+  <meta name="author" content="">
+  <title>Educablocks</title>
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../../assets/images/favicon.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../../global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../../assets/css/site.min.css">
+  <link rel="stylesheet" href="../../assets/skins/blue.css">
+  <link rel="stylesheet" href="../../assets/skins/blue.min.css">
+  <link rel="stylesheet" href="../../../global/vendor/toastr/toastr.css">
+  <link rel="stylesheet" href="../../../global/vendor/bootstrap-sweetalert/sweetalert.css">
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../../global/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../../global/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../../global/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../../global/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../../global/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../../global/vendor/flag-icon-css/flag-icon.css">
+  <link rel="stylesheet" href="../../../global/vendor/waves/waves.css">
+  <link rel="stylesheet" href="../../../global/vendor/chartist/chartist.css">
+  <link rel="stylesheet" href="../../../global/vendor/jvectormap/jquery-jvectormap.css">
+   <link rel="stylesheet" href="../../../global/vendor/webui-popover/webui-popover.css">
+  <link rel="stylesheet" href="../../../global/vendor/toolbar/toolbar.css">
+    <!-- Plugins For This Page -->
+  <link rel="stylesheet" href="../../../global/vendor/webui-popover/webui-popover.min.css?v2.2.0">
+  <link rel="stylesheet" href="../../../global/vendor/toolbar/toolbar.min.css?v2.2.0">
+
+  <!-- Page -->
+  <link rel="stylesheet" href="../assets/examples/css/uikit/tooltip-popover.min.css?v2.2.0">
+  <link rel="stylesheet" href="../../../global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+  <link rel="stylesheet" href="../../assets/examples/css/dashboard/v1.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../../global/fonts/material-design/material-design.min.css">
+  <link rel="stylesheet" href="../../../global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+<!-- Bloques -->
+  <link rel="stylesheet" type="text/css" href="src/highlight/styles/default.css">
+  <link rel="stylesheet" href="src/bloques/css/educablocks.css">
+
+  <!--[if lt IE 9]>
+    <script src="../../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+  <!--[if lt IE 10]>
+    <script src="../../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+  <!-- Scripts -->
+  <script src="../../../global/vendor/breakpoints/breakpoints.js"></script>
+  <script>
+  Breakpoints();
+  </script>
+</head>
+<body class="animsition">
+
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-inverse"
+  role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+      data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon md-more" aria-hidden="true"></i>
+      </button>
+      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+        <img class="navbar-brand-logo" src="../assets/images/logo.png" title="Educablocks">
+        <span class="navbar-brand-text hidden-xs-down"> Educablocks</span>
+      </div>
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
+      data-toggle="collapse">
+        <span class="sr-only">Toggle Search</span>
+        <i class="icon md-search" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="nav-item hidden-float" id="toggleMenubar">
+            <a class="nav-link" data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+            </a>
+          </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+            aria-expanded="false" role="button">
+              Archivo
+            </a>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-file-plus" aria-hidden="true"></i>
+                 Nuevo proyecto</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-code" aria-hidden="true"></i>
+                Nuevo proyecto de código</a>
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem">
+                </div>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-file" aria-hidden="true"></i>
+                Abrir proyecto </a>
+                <div class="dropdown-divider" href="javascript:void(0)" role="menuitem">
+                </div>
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-edit" aria-hidden="true"></i>
+                Cambiar nombre</a>
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-copy" aria-hidden="true"></i>
+                Crear una copia</a>
+                <div class="dropdown-divider" href="javascript:void(0)" role="menuitem">
+                </div>
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-delete" aria-hidden="true"></i>
+                Eliminar proyecto</a>
+            </div>
+          </li>
+                      <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+            aria-expanded="false" role="button">
+              Código
+            </a>
+            <div class="dropdown-menu" role="menu">
+              <a href="#" class="dropdown-item" data-clipboard-action="copy" role="menuitem" data-clipboard-target="#code2" id="exampleSuccessMessage" data-plugin="sweetalert"><i class="icon md-copy" aria-hidden="true"></i>Copiar código</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-edit" aria-hidden="true"></i>
+                 Editar código</a>   
+              <div class="dropdown-divider" href="javascript:void(0)" role="menuitem">
+                </div>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem" onclick="discard()" ><i class="icon md-delete" aria-hidden="true"></i>
+                Borrar bloques</a>
+               
+
+               <a class="dropdown-item" href="#" onclick="$('input[type=file]').trigger('click')"><i class="icon md-cloud-upload" aria-hidden="true"></i>
+                Importar bloques</a>
+
+
+                    <input style="display:none" type='file' onchange="openFile(event)">
+
+
+                <div class="dropdown-divider" href="javascript:void(0)" role="menuitem">
+                </div>
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem" onclick="saveCode()"><i class="icon md-code" aria-hidden="true"></i>
+                Exportar código .ino</a>
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem" onclick="save()"><i class="icon md-cloud-download" aria-hidden="true" ></i>
+                Exportar bloques</a>
+            </div>
+          </li>
+
+              <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+            aria-expanded="false" role="button">
+              Ver
+            </a>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem" onclick="toogleCode()"><i class="icon md-eye-off" aria-hidden="true"></i>
+                Mostrar/ocultar Código</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"> <i class="icon md-desktop-mac" aria-hidden="true"></i>
+                 Monitor serial</a>
+              
+            </div>
+          </li>        
+          </li>
+            </div>
+          </li>
+
+        </ul>
+        <!-- End Navbar Toolbar -->
+        <!-- Navbar Toolbar Right -->
+        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+          <li class="nav-item dropdown">
+
+            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+            aria-expanded="false" role="button">
+              <span class="flag-icon flag-icon-es"></span>
+            </a>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                <span class="flag-icon flag-icon-gb"></span> Inglés</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                <span class="flag-icon flag-icon-br"></span> Portugués</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                <span class="flag-icon flag-icon-fr"></span> Francés</a>
+              <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                <span class="flag-icon flag-icon-de"></span> Aleman</a>
+            </div>
+          </li>
+                    <li class="nav-item dropdown">
+            <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+            data-animation="scale-up" role="button">
+              <span class="avatar avatar-online">
+                <img src="../../../global/portraits/20.jpg" alt="...">
+                <i></i>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+            <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+              <span class="sr-only">Toggle fullscreen</span>
+            </a>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+        <div class="navbar-brand navbar-brand-center">
+          <a href="../index.html">
+            <img class="navbar-brand-logo" src="../../assets/images/logo.png" title="Educablocks">
+          </a>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+      <!-- Site Navbar Seach -->
+      <div class="collapse navbar-search-overlap" id="site-navbar-search">
+        <form role="search">
+          <div class="form-group">
+            <div class="input-search">
+              <i class="input-search-icon md-search" aria-hidden="true"></i>
+              <input type="text" class="form-control" name="site-search" placeholder="Search...">
+              <button type="button" class="input-search-close icon md-close" data-target="#site-navbar-search"
+              data-toggle="collapse" aria-label="Close"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Site Navbar Seach -->
+    </div>
+  </nav>
+  <div class="site-menubar">
+    <div class="site-menubar-header">
+      <div class="cover overlay">
+        <img class="cover-image" src="../../assets//examples/images/header2.png"
+        alt="...">
+        <div class="overlay-panel vertical-align overlay-background">
+          <div class="vertical-align-middle">
+            <a class="avatar avatar-lg" href="javascript:void(0)">
+              <img src="../../../global/portraits/20.jpg" alt="">
+            </a>
+            <div class="site-menubar-info">
+              <h5 class="site-menubar-user">Juani</h5>
+              <p class="site-menubar-email">juani2005@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-menubar-body">
+      <div>
+        <div>
+          <ul class="site-menu" data-plugin="menu">
+            <li class="site-menu-item">
+              <a class="animsition-link" href="../index.html">
+                <i class="site-menu-icon md-apps" aria-hidden="true"></i>
+                <span class="site-menu-title">Inicio</span>
+              </a>
+            </li>
+            <li class="site-menu-item active">
+              <a class="animsition-link" href="bloques.html">
+                <i class="site-menu-icon md-code" aria-hidden="true"></i>
+                <span class="site-menu-title">Bloques</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a class="animsition-link" href="../apps/projects/projects.html">
+                <i class="site-menu-icon md-book" aria-hidden="true"></i>
+                <span class="site-menu-title">Proyectos</span>
+              </a>
+            </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page -->
+    <div class="page-content">
+
+            <xml id="startBlocks" style="display: none">
+                <block type="controls_setupLoop" deletable="false"></block>
+            </xml>
+
+            <div class="row" >
+                <div class="col-md-12">
+                    <div id="blockly" style=" float: left; height: 100%; min-height:520px; max-height:520px; width: 66%;"></div>
+                    <div id="code2" style=" float: right; height: 100%; min-height:520px; max-height:520px; width: 33%;"></div>
+                </div>
+
+                <!-- js -->
+
+                <script src="modules/jquery-3.1.1.js"></script>
+                <script src="js/Blob.js"></script>
+                <script src="js/spin.js"></script>
+                <script src="js/FileSaver.min.js"></script>
+                <script src="js/blockly_helper.js"></script>
+
+                <script src="src/bloques/js/underscore/underscore.js"></script>
+                <script src="src/bloques/js/blockly/blockly_compressedold.js"></script>
+                <script src="src/bloques/js/blockly/blocks_compressedold.js"></script>
+                <script src="src/bloques/js/blockly/arduino_compressed.js"></script>
+                <script src="src/bloques/js/educablocks.js"></script>
+                <script src="src/highlight/highlight.pack.js"></script>
+
+
+                <script>
+
+                    Educablocks.load({
+                        zoom: 0.5
+                    });
+
+
+
+                    // New workspace for each test case
+                    var el = document.getElementById('blockly');
+                    Blockly.inject(el, {
+                        toolbox: Blockly.createToolbox(),
+                        zoom:
+                            {controls: true,
+                                wheel: true,
+                                startScale: 1.0,
+                                maxScale: 3,
+                                minScale: 0.3,
+                                scaleSpeed: 1.2},
+                                trashcan: true});
+
+            var colors = [
+                "",
+        Educablocks.LANG_COLOUR_PROCEDURES,
+        Educablocks.LANG_COLOUR_CONTROL,
+        Educablocks.LANG_COLOUR_LOGIC,
+        Educablocks.LANG_COLOUR_MATH,
+        Educablocks.LANG_COLOUR_VARIABLES,
+        Educablocks.LANG_COLOUR_TEXT,
+        Educablocks.LANG_COLOUR_COMMUNICATION,
+        Educablocks.LANG_COLOUR_ENTRADAS,
+        Educablocks.LANG_COLOUR_SALIDAS,
+        Educablocks.LANG_COLOUR_ADVANCED,
+        Educablocks.LANG_COLOUR_LCD,
+        Educablocks.LANG_COLOUR_SERVO,
+
+            ];
+            $('.blocklyTreeRow').each( function (i,e) {
+                $(e).prepend('<span class="treeLabelBlock" style="background-color:' + colors[i] + '"></span>');
+            });
+
+
+                    // Create a default setup/loop block
+                    Blockly.Xml.domToWorkspace(Blockly.getMainWorkspace(),
+                        document.getElementById('startBlocks'));
+
+                    $('.blocklySvg, #blockly').height('100%');
+                    $('.blocklySvg').width('100%');
+
+
+                    // Update code
+                    Blockly.addChangeListener(function () {
+                        $('#code2').html('<code class="c++"><pre>'
+                            + escapeCode(Blockly.Arduino.workspaceToCode())
+                            + '</pre></code>');
+                        // Highlight
+                        $("pre").each(function (i, e) {
+                            hljs.highlightBlock(e);
+                        });
+                    });
+
+                    // Show/hide code
+                    function toogleCode() {
+                        if ($('#code2').css('display') == 'none') {
+                            // Show
+                            $('#code2').show('');
+                            $('#blockly').width('66%');
+                        } else {
+                            // Hide
+                            $('#code2').hide('');
+                            $('#blockly').width('100%');
+                        }
+                        // Resize workspace
+                        Blockly.fireUiEvent(window, "resize");
+                    }
+
+                    function escapeCode(code) {
+                        var str = code;
+                        str = str.replace(/</g, "&lt;");
+                        str = str.replace(/>/g, "&gt;");
+                        return str;
+                    }
+
+                    function resetWorkspace() {
+                        Blockly.mainWorkspace.clear();
+                        Blockly.Xml.domToWorkspace(Blockly.getMainWorkspace(),
+                            document.getElementById('startBlocks'));
+                    }
+
+                    if (xmlpassed != ""){
+                        auto_save_and_restore_blocks_server(xmlpassed);
+                    }else{
+                        auto_save_and_restore_blocks();
+                    }
+
+                    /**
+                     * Loads an XML file from the server and replaces the current blocks into the
+                     * Blockly workspace.
+                     * @param {!string} xmlFile Server location of the XML file to load.
+                     */
+
+                </script>
+            </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer-legal">© 2017 <a href="http://educabot.org">Educabot</a></div>
+    <div class="site-footer-right">
+        Desarrollado <i class="red-600 icon md-favorite"></i> por <a href="http://educabot.org">Educabot</a>
+    </div>
+
+</footer>
+
+  <!-- End Page -->
+      <!-- Site Action -->
+   <!--  <div class="site-action" data-plugin="actionBtn"-->
+ <!--      <div class="toolbar-icons" id="user-options" hidden>
+                    <a href="#" data-toggle="tooltip"
+                  data-original-title="Copiar" class="btn-info2" data-clipboard-action="copy" data-clipboard-target="#code2" id="exampleSuccessMessage" data-plugin="sweetalert"><i class="icon md-copy" aria-hidden="true"></i></a>
+                  <a href="#" data-toggle="tooltip"
+                  data-original-title="Descargar" onclick="saveCode()"><i class="icon md-download" aria-hidden="true"></i></a>
+                  <a href="#" data-toggle="tooltip"
+                  data-original-title="Borrar bloques" onclick="discard()"><i class="icon md-delete" aria-hidden="true"></i></a>
+                  <a href="#" data-toggle="tooltip"
+                  data-original-title="Guardar bloques" onclick="save()"><i class="icon md-file" aria-hidden="true"></i></a>
+                  <a href="#" data-toggle="tooltip"
+                  data-original-title="Ocultar" onclick="toogleCode()"><i class="icon md-eye-off" aria-hidden="true"></i></a>
+                   
+                  </div>
+                  <button type="button" class="btn btn-icon btn-danger btn-round" data-plugin="toolbar"
+                   data-toolbar="#user-options" data-toolbar-style="danger">
+                    <i class="icon md-code" aria-hidden="true"></i>
+                  </button>
+                  <a class="btn btn-icon btn-primary btn-round" data-toggle="tooltip"
+                  data-original-title="Ver guía" data-url="../uikit/proyecto1.html" data-width="500"
+                  data-height="350" data-padding="false" data-closeable="true"
+                  data-title="Guía: Proyecto 1" data-type="iframe" href="javascript:void(0)"
+                  data-plugin="webuiPopover"> <i class="icon md-book" aria-hidden="true"></i></a>-->
+ 
+  <!--<label id="fakeload">Load XML
+              <input type="file" id="load"/>
+</label>-->
+
+    
+
+
+    <!-- End Site Action -->
+    
+  <!-- Footer -->
+
+  
+  <!-- Core  -->
+  <script src="../../../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+  <script src="../../../global/vendor/jquery/jquery.js"></script>
+  <script src="../../../global/vendor/tether/tether.js"></script>
+  <script src="../../../global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../../global/vendor/animsition/animsition.js"></script>
+  <script src="../../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+  <script src="../../../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+  <script src="../../../global/vendor/webui-popover/jquery.webui-popover.min.js"></script>
+  <script src="../../../global/vendor/toolbar/jquery.toolbar.min.js"></script>
+  <!-- Plugins 
+  <script src="../../../global/vendor/chartist/chartist.min.js"></script>
+  <script src="../../../global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.min.js"></script>
+  <script src="../../../global/vendor/jvectormap/jquery-jvectormap.min.js"></script>
+  <script src="../../../global/vendor/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="../../../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+  <script src="../../../global/vendor/peity/jquery.peity.min.js"></script>-->
+  
+  <!-- Plugins -->
+  <script src="../../../global/vendor/switchery/switchery.min.js"></script>
+  <script src="../../../global/vendor/intro-js/intro.js"></script>
+  <script src="../../../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../../global/vendor/webui-popover/jquery.webui-popover.min.js"></script>
+  <script src="../../../global/vendor/toolbar/jquery.toolbar.js"></script>
+
+  <!-- Scripts -->
+  <script src="../../../global/js/State.js"></script>
+  <script src="../../../global/js/Component.js"></script>
+  <script src="../../../global/js/Plugin.js"></script>
+  <script src="../../../global/js/Base.js"></script>
+  <script src="../../../global/js/Config.js"></script>
+  <script src="../../assets/js/Section/Menubar.js"></script>
+  <script src="../../assets/js/Section/Sidebar.js"></script>
+  <script src="../../assets/js/Section/PageAside.js"></script>
+  <script src="../../assets/js/Plugin/menu.js"></script>
+  
+
+  <!-- Config -->
+  <script src="../../../global/js/config/colors.js"></script>
+  <script src="../../assets/js/config/tour.js"></script>
+  <script>
+  Config.set('assets', '../assets');
+  </script>
+  <!-- Page -->
+  <script src="../../assets/js/Site.js"></script>
+  <script src="../../../global/js/Plugin/asscrollable.js"></script>
+  <script src="../../../global/js/Plugin/slidepanel.js"></script>
+  <script src="../../../global/js/Plugin/switchery.js"></script>
+  <script src="../../../global/js/Plugin/webui-popover.js"></script>
+  <script src="../../../global/js/Plugin/toolbar.js"></script>
+  <script src="../../assets/examples/js/uikit/tooltip-popover.js"></script>
+  <script src="../../../global/vendor/bootbox/bootbox.js"></script>
+  <script src="../../../global/vendor/bootstrap-sweetalert/sweetalert.js"></script>
+
+    <script src="src/material/css/clipboard/dist/clipboard.min.js"></script>
+
+<!-- 3. Instantiate clipboard -->
+    <script>
+    var clipboard = new Clipboard('.dropdown-item');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+
+   var openFile = function(event) {
+        var input = event.target;
+        var reader = new FileReader();
+        reader.onload = function(){
+          var xml_text = reader.result;
+          Blockly.mainWorkspace.clear();
+          //$('#startBlocks').value = text;
+        var vxml = Blockly.Xml.textToDom(xml_text);
+          console.log(vxml);
+        Blockly.Xml.domToWorkspace(Blockly.getMainWorkspace(), vxml);
+
+          //resetWorkspace();
+          
+          //var node = document.getElementById('output');
+          //node.innerText = text;
+          //console.log(reader.result.substring(0, 200));
+        };
+        reader.readAsText(input.files[0]);
+      };
+    </script>
+
+  <!--  Notifications Plugin    -->
+ <script src="../../../global/js/Plugin/bootbox.js"></script>
+  <script src="../../../global/js/Plugin/bootstrap-sweetalert.js"></script>
+  <script src="../../../global/js/Plugin/toastr.js"></script>
+  <script src="../../assets/examples/js/advanced/bootbox-sweetalert.js"></script>
+</body>
+</html>
